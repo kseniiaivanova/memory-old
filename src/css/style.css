@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Indie Flower';
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
+    background: rgb(42, 143, 156);
+    color: aliceblue;
+}
+
+.cardsArea {
+    display: flex;
+    flex-wrap: wrap;
+    width: 672px;
+    justify-content: center;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.3);
+    
+    
+}
+
+img {
+    margin: 6px;
+    
+}
+
+
+
+.heading {
+    font-size: 70px;
+    margin-bottom: 15px;
+}
+
+.result {
+    font-size: 42px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+
+
+
+button {
+    color: rgb(42, 143, 156);
+    background: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 25px;
+    margin-top: 25px;
+    padding: 5px;
+    font-size: 40px;
+    border: none;
+    cursor: pointer;
+    width: 180px;
+    border-radius: 4px;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.3);
+}
+
+
+button:hover  {
+    background-color: rgb(88, 176, 188);
+    color: white;
+}
