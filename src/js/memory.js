@@ -1,69 +1,53 @@
-import blank from "../assets/blank.png";
-import final from "../assets/prize.png";
-import unclicked from "../assets/bild_unclicked.png";
-/* import ars from "../assets/arsenal.png";
-import dog from "../assets/dog.png";
-import kill from "../assets/kill.png";
-import low from "../assets/low.png";
-import malajasted from "../assets/malajasted.png";
-import peace from "../assets/peace.png";
-import quarry from "../assets/quarry.png";
-import refusal from "../assets/refusal.png";
-import ringleader from "../assets/ringleader.png";
-import son from "../assets/son.png";
-import southpaw from "../assets/southpaw.png";
-import viva from "../assets/viva.png"; */
-
 document.addEventListener("DOMContentLoaded", () => {
   //creating objects inside the array
   const bildArray = [
-    { imageName: "arsenal", imagePath: "arsenal" },
+    { imageName: "arsenal", imagePath: "arsenal.png" },
 
-    { imageName: "dog", imagePath: "../assets/dog.png" },
+    { imageName: "dog", imagePath: "dog.png" },
 
-    { imageName: "kill", imagePath: "../assets/kill.png" },
+    { imageName: "kill", imagePath: "kill.png" },
 
-    { imageName: "low", imagePath: "../assets/low.png" },
+    { imageName: "low", imagePath: "low.png" },
 
-    { imageName: "malajasted", imagePath: "../assets/malajasted.png" },
+    { imageName: "malajasted", imagePath: "malajasted.png" },
 
-    { imageName: "peace", imagePath: "../assets/peace.png" },
+    { imageName: "peace", imagePath: "peace.png" },
 
-    { imageName: "quarry", imagePath: "../assets/quarry.png" },
+    { imageName: "quarry", imagePath: "quarry.png" },
 
-    { imageName: "refusal", imagePath: "../assets/refusal.png" },
+    { imageName: "refusal", imagePath: "refusal.png" },
 
-    { imageName: "ringleader", imagePath: "../assets/ringleader.png" },
+    { imageName: "ringleader", imagePath: "ringleader.png" },
 
-    { imageName: "son", imagePath: "../assets/son.png" },
+    { imageName: "son", imagePath: "son.png" },
 
-    { imageName: "southpaw", imagePath: "../assets/southpaw.png" },
+    { imageName: "southpaw", imagePath: "southpaw.png" },
 
-    { imageName: "viva", imagePath: "../assets/viva.png" },
+    { imageName: "viva", imagePath: "viva.png" },
 
-    { imageName: "arsenal", imagePath: "../assets/arsenal.png" },
+    { imageName: "arsenal", imagePath: "arsenal.png" },
 
-    { imageName: "dog", imagePath: "../assets/dog.png" },
+    { imageName: "dog", imagePath: "dog.png" },
 
-    { imageName: "kill", imagePath: "../assets/kill.png" },
+    { imageName: "kill", imagePath: "kill.png" },
 
-    { imageName: "low", imagePath: "../assets/low.png" },
+    { imageName: "low", imagePath: "low.png" },
 
-    { imageName: "malajasted", imagePath: "../assets/malajasted.png" },
+    { imageName: "malajasted", imagePath: "malajasted.png" },
 
-    { imageName: "peace", imagePath: "../assets/peace.png" },
+    { imageName: "peace", imagePath: "peace.png" },
 
-    { imageName: "quarry", imagePath: "../assets/quarry.png" },
+    { imageName: "quarry", imagePath: "quarry.png" },
 
-    { imageName: "refusal", imagePath: "../assets/refusal.png" },
+    { imageName: "refusal", imagePath: "refusal.png" },
 
-    { imageName: "ringleader", imagePath: "../assets/ringleader.png" },
+    { imageName: "ringleader", imagePath: "ringleader.png" },
 
-    { imageName: "son", imagePath: "../assets/son.png" },
+    { imageName: "son", imagePath: "son.png" },
 
-    { imageName: "southpaw", imagePath: "../assets/southpaw.png" },
+    { imageName: "southpaw", imagePath: "southpaw.png" },
 
-    { imageName: "viva", imagePath: "../assets/viva.png" },
+    { imageName: "viva", imagePath: "viva.png" },
   ];
 
   //sorting the images in random order
@@ -88,7 +72,7 @@ document.addEventListener("DOMContentLoaded", () => {
   function makeBoard() {
     for (i = 0; i < bildArray.length; i++) {
       const bild = document.createElement("img");
-      bild.setAttribute("src", unclicked);
+      bild.setAttribute("src", "bild_unclicked.png");
       bild.setAttribute("id", i);
       bild.addEventListener("click", flipCard);
       cardArea.appendChild(bild);
@@ -101,15 +85,15 @@ document.addEventListener("DOMContentLoaded", () => {
     const id1 = bildClickedId[0];
     const id2 = bildClickedId[1];
     if (bildClicked[0] === bildClicked[1] && id2 !== id1) {
-      cards[id1].setAttribute("src", blank);
-      cards[id2].setAttribute("src", blank);
+      cards[id1].setAttribute("src", "blank.png");
+      cards[id2].setAttribute("src", "blank.png");
       cards[id1].removeEventListener("click", flipCard);
       cards[id2].removeEventListener("click", flipCard);
       numOpened.push(bildClicked);
       message.innerHTML = "Match found!";
     } else {
-      cards[id1].setAttribute("src", unclicked);
-      cards[id2].setAttribute("src", unclicked);
+      cards[id1].setAttribute("src", "bild_unclicked.png");
+      cards[id2].setAttribute("src", "bild_unclicked.png");
       message.innerHTML = "Sorry, try again!";
     }
 
@@ -119,9 +103,9 @@ document.addEventListener("DOMContentLoaded", () => {
     if (numOpened.length === bildArray.length / 2) {
       message.innerHTML = "Congrats! You rock!";
       let prize = document.createElement("img");
-      prize.setAttribute("src", final);
+      prize.setAttribute("src", "prize.png");
       cardArea.innerHTML = "";
-      cardArea.insertAdjacentElement("afterbegin", final);
+      cardArea.insertAdjacentElement("afterbegin", prize);
 
       let reButt = document.createElement("button");
       reButt.innerText = "Play again";
