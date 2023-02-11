@@ -4,15 +4,17 @@
     padding: 0;
     margin: 0;
     font-family: 'Indie Flower';
+    background: rgb(42, 143, 156);
+    color: aliceblue;
 }
 
 .wrapper {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 80%;
-    background: rgb(42, 143, 156);
-    color: aliceblue;
+    
+  
+    
 }
 
 .cardsArea {
