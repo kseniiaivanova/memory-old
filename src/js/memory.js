@@ -1,53 +1,125 @@
 document.addEventListener("DOMContentLoaded", () => {
   //creating objects inside the array
   const bildArray = [
-    { imageName: "arsenal", imagePath: "arsenal.png" },
+    {
+      imageName: "arsenal",
+      imagePath: "arsenal.png",
+    },
 
-    { imageName: "dog", imagePath: "dog.png" },
+    {
+      imageName: "dog",
+      imagePath: "dog.png",
+    },
 
-    { imageName: "kill", imagePath: "kill.png" },
+    {
+      imageName: "kill",
+      imagePath: "kill.png",
+    },
 
-    { imageName: "low", imagePath: "low.png" },
+    {
+      imageName: "low",
+      imagePath: "low.png",
+    },
 
-    { imageName: "malajasted", imagePath: "malajasted.png" },
+    {
+      imageName: "malajasted",
+      imagePath: "malajasted.png",
+    },
 
-    { imageName: "peace", imagePath: "peace.png" },
+    {
+      imageName: "peace",
+      imagePath: "peace.png",
+    },
 
-    { imageName: "quarry", imagePath: "quarry.png" },
+    {
+      imageName: "quarry",
+      imagePath: "quarry.png",
+    },
 
-    { imageName: "refusal", imagePath: "refusal.png" },
+    {
+      imageName: "refusal",
+      imagePath: "refusal.png",
+    },
 
-    { imageName: "ringleader", imagePath: "ringleader.png" },
+    {
+      imageName: "ringleader",
+      imagePath: "ringleader.png",
+    },
 
-    { imageName: "son", imagePath: "son.png" },
+    {
+      imageName: "son",
+      imagePath: "son.png",
+    },
 
-    { imageName: "southpaw", imagePath: "southpaw.png" },
+    {
+      imageName: "southpaw",
+      imagePath: "southpaw.png",
+    },
 
-    { imageName: "viva", imagePath: "viva.png" },
+    {
+      imageName: "viva",
+      imagePath: "viva.png",
+    },
 
-    { imageName: "arsenal", imagePath: "arsenal.png" },
+    {
+      imageName: "arsenal",
+      imagePath: "arsenal.png",
+    },
 
-    { imageName: "dog", imagePath: "dog.png" },
+    {
+      imageName: "dog",
+      imagePath: "dog.png",
+    },
 
-    { imageName: "kill", imagePath: "kill.png" },
+    {
+      imageName: "kill",
+      imagePath: "kill.png",
+    },
 
-    { imageName: "low", imagePath: "low.png" },
+    {
+      imageName: "low",
+      imagePath: "low.png",
+    },
 
-    { imageName: "malajasted", imagePath: "malajasted.png" },
+    {
+      imageName: "malajasted",
+      imagePath: "malajasted.png",
+    },
 
-    { imageName: "peace", imagePath: "peace.png" },
+    {
+      imageName: "peace",
+      imagePath: "peace.png",
+    },
 
-    { imageName: "quarry", imagePath: "quarry.png" },
+    {
+      imageName: "quarry",
+      imagePath: "quarry.png",
+    },
 
-    { imageName: "refusal", imagePath: "refusal.png" },
+    {
+      imageName: "refusal",
+      imagePath: "refusal.png",
+    },
 
-    { imageName: "ringleader", imagePath: "ringleader.png" },
+    {
+      imageName: "ringleader",
+      imagePath: "ringleader.png",
+    },
 
-    { imageName: "son", imagePath: "son.png" },
+    {
+      imageName: "son",
+      imagePath: "son.png",
+    },
 
-    { imageName: "southpaw", imagePath: "southpaw.png" },
+    {
+      imageName: "southpaw",
+      imagePath: "southpaw.png",
+    },
 
-    { imageName: "viva", imagePath: "viva.png" },
+    {
+      imageName: "viva",
+      imagePath: "viva.png",
+    },
   ];
 
   //sorting the images in random order
