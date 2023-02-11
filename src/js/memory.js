@@ -142,7 +142,7 @@ document.addEventListener("DOMContentLoaded", () => {
   //creating the board
 
   function makeBoard() {
-    for (i = 0; i < bildArray.length; i++) {
+    for (let i = 0; i < bildArray.length; i++) {
       const bild = document.createElement("img");
       bild.setAttribute("src", "bild_unclicked.png");
       bild.setAttribute("id", i);
@@ -175,7 +175,7 @@ document.addEventListener("DOMContentLoaded", () => {
     if (numOpened.length === bildArray.length / 2) {
       message.innerHTML = "Congrats! You rock!";
       let prize = document.createElement("img");
-      prize.setAttribute("src", "prize.png");
+      prize.setAttribute("src", "/static/prize.png");
       cardArea.innerHTML = "";
       cardArea.insertAdjacentElement("afterbegin", prize);
 
