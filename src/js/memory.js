@@ -175,7 +175,7 @@ document.addEventListener("DOMContentLoaded", () => {
     if (numOpened.length === bildArray.length / 2) {
       message.innerHTML = "Congrats! You rock!";
       let prize = document.createElement("img");
-      prize.setAttribute("src", "/static/prize.png");
+      prize.setAttribute("src", "prize.png");
       cardArea.innerHTML = "";
       cardArea.insertAdjacentElement("afterbegin", prize);
 
